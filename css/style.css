@@ -315,12 +315,23 @@ line-height: 26px;
   background-image: url("../img/map.jpg");
   width: 1200px;
   height: 594px;
+  margin: 0 auto;
+
   
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
 }
+
+.search-form-container {
+  position: relative;
+
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
 
 .search-form-title {
   /* border: 2px solid black; */
@@ -338,10 +349,22 @@ line-height: 26px;
   .search-form-title-item > a {
     color: #ffffff;
     text-transform: uppercase;
+    
   }
 
 .search-form {
-  /* border: 2px solid black; */
+
+  /* ВСЕ СТИЛИ В ТЕГЕ НИЖЕ */
+  
+  display: none;
+  transform: translateY(-307px);
+  
+  } 
+
+
+.search-form-popup {
+  transform: translateY(0px);
+
   padding-top: 10px;
   background-color: #ffffff;
   width: 568px;
@@ -358,10 +381,13 @@ line-height: 26px;
   margin-left: -284px;
 
   z-index: 2;
-  
-  
-  } 
 
+  transform: translateY(0px);
+  /* transition-timing-function: ease-in;
+  transition-duration: 200ms;
+  transition-property: transform; */
+  
+}
 
 .appointment-parents-children {
   width: 458px;
@@ -376,9 +402,6 @@ line-height: 26px;
 
 
 
-.search-form-container {
-  position: relative;
-}
 
 
 .search-form-button {
